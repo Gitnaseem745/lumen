@@ -5,7 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+        'averta': ['averta cv w10', ''],
+      },
   },
   plugins: [],
 }

@@ -1,8 +1,8 @@
-import {project, resource, inspiration, section} from './lumenContent.js';
+import Navbar from './components/Navbar/Navbar.jsx';
 function App() {
   return (
     <>
-    <h1>Fresh</h1>
+    <Navbar/>
     </>
   )
 }
