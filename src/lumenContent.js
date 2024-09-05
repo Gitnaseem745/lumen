@@ -1,32 +1,26 @@
-import { insImgFour, insImgOne, insImgThree, insImgTwo } from "./assets/inspire_imgs"
-import { proImgEight, proImgFive, proImgFour, proImgOne, proImgSeven, proImgSix, proImgThree, proImgTwo } from "./assets/project_imgs"
-import { resImgOne, resImgThree, resImgTwo } from "./assets/resource_imgs"
-//home section words
-// const words = ["Capture", "Moments", "Light"];
+import { insImgFour, insImgOne, insImgThree, insImgTwo } from "./assets/inspire_imgs";
+import { proImgEight, proImgFive, proImgFour, proImgOne, proImgSeven, proImgSix, proImgThree, proImgTwo } from "./assets/project_imgs";
+import { resImgOne, resImgThree, resImgTwo } from "./assets/resource_imgs";
 
+export const section = {
+    home: {
+        title: "We See the World Differently.",
+        description: "Premier photography studio specializing in timeless b/w imagery. We capture the essence of moments, bringing out the beauty in simplicity and contrast. From portraiture to architecture, our work transforms ordinary scenes into extraordinary art.",
+    },
+    featured: {
+        title: "Beauty of Photography",
+        description: "Our Photography Skills Showcase"
+    },
+    resources: {
+        title: "Photography Resources & Inspiration",
+        description: "We regularly share photography tutorials, offer guidance to aspiring photographers, walk you through capturing stunning black-and-white images, and provide access to exclusive photography tools and techniques.",
+    },
+    inspiration: {
+        title: "New Day - New Inspire",
+        description: "Every day brings fresh inspiration. Explore a collection of daily moments, captured in stunning black-and-white photography, designed to ignite your creative vision.",
+    }
+}
 
-// <div className="words">
-//     {words.map((word)=>(
-//         <h1>{word}</h1>
-//     ))}
-// </div>
-export const section = [{
-    hero: "We See the World Differently.",
-    herodes: "Premier photography studio specializing in timeless b/w imagery. We capture the essence of moments, bringing out the beauty in simplicity and contrast. From portraiture to architecture, our work transforms ordinary scenes into extraordinary art.",
-},
-{
-    featured: "Beauty of Photography",
-    feades: "Our Photography Skills Showcase"
-},
-{
-    resources: "Photography Resources & Inspiration",
-    resdes: "We regularly share photography tutorials, offer guidance to aspiring photographers, walk you through capturing stunning black-and-white images, and provide access to exclusive photography tools and techniques.",
-},
-{
-    inspiration: "New Day - New Inspire",
-    inpdes: "Every day brings fresh inspiration. Explore a collection of daily moments, captured in stunning black-and-white photography, designed to ignite your creative vision.",
-},
-]
 export const project = [{
     theme: "Urban",
     name: "Cityscapes in Monochrome",

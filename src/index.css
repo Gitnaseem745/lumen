@@ -18,11 +18,17 @@ html, body{
     -webkit-text-stroke: 1px #000;
 }
 @layer base{
+    *{
+        @apply font-averta
+    }
+    .home{
+        @apply w-full min-h-screen
+    }
     .nav{
         @apply flex items-center justify-between w-full py-[40px] px-[50px]
     }
     .logo{
-        @apply font-averta font-bold text-3xl pointer-events-none
+        @apply font-bold text-3xl pointer-events-none
     }
     .navRight{
         @apply flex items-center gap-9
@@ -30,7 +36,13 @@ html, body{
     .navLink{
         @apply font-semibold text-black tracking-[-1px] text-[1vw] cursor-pointer
     }
+    .heroTitle{
+        @apply font-normal tracking-[-.1vw] text-[1.34vw]
+    }
     .outLined{
-        @apply text-transparent text-[7vw] font-[900] leading-[1px];
+        @apply text-transparent text-[7vw] font-[900] leading-[1] tracking-[-7px] hover:text-black;
+    }
+    .heroDes{
+        @apply text-[1.6vw] font-normal w-[70%] tracking-[-.08vw]
     }
 }
