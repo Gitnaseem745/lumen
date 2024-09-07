@@ -14,7 +14,7 @@ const Hero = () => {
         </div>
         </div>
         <div className="px-[15vw] py-[5vw]">
-            <p className='heroDes'>{section.home.description}</p>
+            <p className='sectionDes'>{section.home.description}</p>
         </div>
     </section>
   )

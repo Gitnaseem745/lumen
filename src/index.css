@@ -42,7 +42,52 @@ html, body{
     .outLined{
         @apply text-transparent text-[7vw] font-[900] leading-[1] tracking-[-7px] hover:text-black;
     }
-    .heroDes{
+    .sectionDes{
         @apply text-[1.6vw] font-normal w-[70%] tracking-[-.08vw]
+    }
+    .featuredTitle{
+        @apply outLined tracking-tight text-[4vw] pointer-events-none stroke
+    }
+    .featuredCard{
+        @apply flex justify-between w-full h-screen pt-[5vw]
+    }
+    .featuredText{
+        @apply w-[45%] h-[inherit]
+    }
+    .featuredTextDiv{
+        @apply flex flex-col justify-center w-full h-[inherit]
+    }
+    .featuredH1{
+        @apply text-[2.5vw] capitalize my-[1.5vw] tracking-[1]
+    }
+    .featuredImg{
+        @apply flex items-center justify-end w-[45%] h-[inherit]
+    }
+    .btnStyle{
+        @apply px-[2.5vw] py-[1.3vw] rounded-[100px] border-[2px] border-solid border-[#e6e6e6] bg-transparent text-[1vw] tracking-[-.7px] font-[500] hover:bg-black hover:text-white
+    }
+    .resourceCardContainer{
+        @apply flex flex-row gap-8 pt-[8vw] pb-[3vw]
+    }
+    .resourceImg{
+        @apply w-[400px] h-[270px] object-cover rounded-xl cursor-pointer
+    }
+    .resourceTag{
+        @apply rounded-[100px] bg-[#f7f7f7] w-fit px-[22px] py-[10px] my-[20px] cursor-pointer
+    }
+    .resourceH1{
+        @apply text-[1.4vw] font-normal tracking-[-.5px]
+    }
+    .inspireImg{
+        @apply w-full h-[270px] object-cover rounded-xl cursor-pointer
+    }
+    .inspireIcon{
+        @apply mt-5 pr-3 cursor-pointer
+    }
+    .inspireTag{
+        @apply font-semibold mt-[1.3vw] mb-[0.5vw] cursor-pointer
+    }
+    .inspireH1{
+        @apply text-sm font-[500] tracking-[-.5px]
     }
 }
