@@ -19,8 +19,8 @@ const Footer = () => {
             <a href='' className='font-semibold'>Privacy Policy</a>
         </div>
         <div className="socialLinks">
-        {section.footer.social.map((app)=>(
-            <a href="">{app}</a>
+        {section.footer.social.map((app, index)=>(
+            <a href="" key={index}>{app}</a>
         ))}
         </div>
         </div>

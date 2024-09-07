@@ -7,8 +7,8 @@ const Featured = () => {
   return (
     <section  className='py-[10vw] px-[15vw]'>
         <div>
-            <h1 className='text-2xl'>{section.featured.title}</h1>
-            <h1 className='featuredTitle w-[50%]'>{section.featured.description}</h1>
+            <h1 className='text-2xl max-sm:text-[16px]'>{section.featured.title}</h1>
+            <h1 className='featuredTitle w-[50%] max-sm:w-full max-sm:text-3xl'>{section.featured.description}</h1>
         </div>
         <div className="pb-[5vw]">
         {project.map((project)=>(

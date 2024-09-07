@@ -7,7 +7,7 @@ const Hero = () => {
     <section className='w-full'>
         <div className='p-[15vw] w-full'>
         <h1 className='heroTitle'>{section.home.title}</h1>
-        <div className="flex gap-9">
+        <div className="flex gap-x-9 max-sm:flex-col max-sm:gap-y-4 max-sm:mt-10">
         {words.map((word, index)=>(
         <h1 className='outLined stroke' key={index}>{word}</h1>
         ))}
