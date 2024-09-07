@@ -90,4 +90,25 @@ html, body{
     .inspireH1{
         @apply text-sm font-[500] tracking-[-.5px]
     }
+    .footer{
+        @apply bg-black text-white p-[15vw] h-screen
+    }
+    .footerTitle{
+        @apply text-[5vw] w-[50%] font-light leading-[1] pb-[5vw]
+    }
+    .footerBottom{
+        @apply flex justify-between gap-20 items-center pt-[10vw]
+    }
+    .address{
+        @apply flex flex-col gap-5 w-[17.5%]
+    }
+    .mail{
+        @apply text-2xl font-semibold cursor-pointer
+    }
+    .dummyAddress{
+        @apply opacity-50 font-semibold text-sm
+    }
+    .socialLinks{
+        @apply flex gap-20 flex-row flex-wrap w-[50%] justify-end
+    }
 }

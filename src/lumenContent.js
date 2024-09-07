@@ -18,6 +18,10 @@ export const section = {
     inspiration: {
         title: "New Day - New Inspire",
         description: "Every day brings fresh inspiration. Explore a collection of daily moments, captured in stunning black-and-white photography, designed to ignite your creative vision.",
+    },
+    footer: {
+        title: "Have an idea?",
+        description: "Tell us about it",
     }
 }
 
