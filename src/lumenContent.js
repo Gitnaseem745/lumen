@@ -22,6 +22,9 @@ export const section = {
     footer: {
         title: "Have an idea?",
         description: "Tell us about it",
+        address: "901 N Sydney, Suite 198 America, NA 22789, USA",
+        mail: "info@lumen.com",
+        social: ["LinkedIn", "Twitter", "Behance", "Instagram", "Facebook", "Dribble", "Youtube", "Threads"],
     }
 }
 
