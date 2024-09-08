@@ -49,22 +49,22 @@ html, body{
         @apply outLined tracking-tight text-[4vw] pointer-events-none stroke max-sm:text-4xl
     }
     .featuredCard{
-        @apply flex justify-between w-full h-screen pt-[5vw]
+        @apply flex justify-between w-full h-screen pt-[5vw] max-sm:flex-col max-sm:justify-center max-sm:gap-8 max-sm:h-fit
     }
     .featuredText{
-        @apply w-[45%] h-[inherit]
+        @apply w-[45%] h-[inherit] max-sm:w-full max-sm:h-fit
     }
     .featuredTextDiv{
-        @apply flex flex-col justify-center w-full h-[inherit]
+        @apply flex flex-col justify-center w-full h-[inherit] max-sm:h-full
     }
     .featuredH1{
-        @apply text-[2.5vw] capitalize my-[1.5vw] tracking-[1]
+        @apply text-[2.5vw] capitalize my-[1.5vw] tracking-[1] max-sm:text-xl
     }
     .featuredImg{
-        @apply flex items-center justify-end w-[45%] h-[inherit]
+        @apply flex items-center justify-end w-[45%] h-[inherit] max-sm:w-full max-sm:h-fit max-sm:justify-center
     }
     .btnStyle{
-        @apply px-[2.5vw] py-[1.3vw] rounded-[100px] border-[2px] border-solid border-[#e6e6e6] bg-transparent text-[1vw] tracking-[-.7px] font-[500] hover:bg-black hover:text-white max-sm:text-[11px]
+        @apply px-[2.5vw] py-[1.3vw] rounded-[100px] border-[1px] border-solid border-[#e6e6e6] bg-transparent text-[1vw] tracking-[-.7px] font-[500] hover:border-black hover:bg-black hover:text-white max-sm:text-[11px]
     }
     .resourceCardContainer{
         @apply flex flex-row gap-8 pt-[8vw] pb-[3vw] max-sm:flex-col
