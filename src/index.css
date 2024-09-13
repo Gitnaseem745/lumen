@@ -1,25 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-*::selection{
-    color: white;
-    background-color: black;
-}
-html, body{
-    width: 100%;
-    height: 100%;
-}
+
 .stroke{
     -webkit-text-stroke: 1px #000;
 }
 @layer base{
     *{
-        @apply font-averta
+        @apply font-averta selection:text-white selection:bg-black m-0 p-0
+    }
+    html,body{
+        @apply w-full h-full
+    }
+    .Circle{
+        @apply size-[24px] rounded-[24px] bg-black absolute top-0 left-0
     }
     .home{
         @apply w-full min-h-screen
