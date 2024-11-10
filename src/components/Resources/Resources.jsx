@@ -10,8 +10,8 @@ const Resources = () => {
             <h1 className='sectionDes'>{section.resources.description}</h1>
         </div>
         <div className="resourceCardContainer">
-        {resource.map((resource)=>(
-            <ResourceCard img={resource.img} tag={resource.tag} name={resource.name} />
+        {resource.map((resource, i)=>(
+            <ResourceCard key={i} img={resource.img} tag={resource.tag} name={resource.name} />
         ))}
         </div>
         <Button btnText="see all resources" />

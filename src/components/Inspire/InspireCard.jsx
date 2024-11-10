@@ -5,7 +5,7 @@ const InspireCard = ({img, tag, name}) => {
     <div className='flex flex-col gap-4'>
     <img src={img} className='inspireImg'/>
     <div className="flex flex-row">
-    <i class="inspireIcon  ri-building-line"></i>
+    <i className="inspireIcon  ri-building-line"></i>
     <p className='inspireTag'>{tag}</p>
     </div>
     <h1 className='inspireH1'>{name}</h1>

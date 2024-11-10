@@ -6,11 +6,11 @@ const Cursor = () => {
 
   useEffect(() => {
     const circles = document.querySelectorAll('.Circle');
-    
+
     circles.forEach((circle) => {
       circle.x = 0;
       circle.y = 0;
-      circle.style.backgroundColor = '000';
+      circle.style.backgroundColor = '#000';
       circle.style.position = 'fixed';
       circle.style.zIndex = 1000;
       circle.style.pointerEvents = 'none';

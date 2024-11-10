@@ -11,8 +11,8 @@ const Inspire = () => {
             {/* <h1 className='sectionDes'>{section.inspiration.description}</h1> */}
             </div>
             <div className="resourceCardContainer">
-            {inspiration.map((inspire)=>(
-            <InspireCard img={inspire.img} tag={inspire.tag} name={inspire.name} />
+            {inspiration.map((inspire, i)=>(
+            <InspireCard img={inspire.img} key={i} tag={inspire.tag} name={inspire.name} />
         ))}
         </div>
         <Button btnText="see all inspirations" />

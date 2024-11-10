@@ -11,8 +11,8 @@ const Featured = () => {
             <h1 className='featuredTitle w-[50%] max-sm:w-full max-sm:text-3xl'>{section.featured.description}</h1>
         </div>
         <div className="pb-[5vw] max-sm:pt-[20vw] flex flex-col max-sm:gap-20">
-        {project.map((project)=>(
-            <FeaturedCard theme={project.theme} name={project.name} tags={project.tags} img={project.img} />
+        {project.map((project, i)=>(
+            <FeaturedCard key={i} theme={project.theme} name={project.name} tags={project.tags} img={project.img} />
         ))}
         </div>
         <Button btnText="view all projects" />
