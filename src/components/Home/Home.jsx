@@ -3,21 +3,22 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar.jsx'
 import Hero from '../Hero/Hero.jsx'
 import { useState } from 'react';
+import { insImgFour, insImgThree } from '../../assets/inspire_imgs/index.js';
+import { resImgThree, resImgTwo } from '../../assets/resource_imgs/index.js';
 const Home = () => {
     const [bgImage, setBgImage] = useState('');
-
     const handleMouseEnter = (word) => {
-        setBgImage( word=="Capture" ? "url(src/assets/inspire_imgs/insImgThree.jpg)" :
-                    word=="Moments" ? "url(src/assets/resource_imgs/resImgTwo.jpg)"  :
-                    word=="Light" ? "url(src/assets/resource_imgs/resImgThree.jpg)"  : "");
+        setBgImage( word=="Capture" ? insImgThree :
+                    word=="Moments" ? resImgTwo :
+                    word=="Light" ? resImgThree : "");
     };
 
     const handleMouseLeave = () => {
       setBgImage('');
     };
-    
+
   return (
-    <section className='home' style={{ backgroundImage: bgImage, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center center", transition: 'background-image 0.3s ease-in-out' }}>
+    <section className='home' style={{ backgroundImage: `url(${bgImage})`}}>
     <Navbar/>
     <Hero handleMouseLeave={handleMouseLeave} handleMouseEnter={handleMouseEnter}/>
     </section>

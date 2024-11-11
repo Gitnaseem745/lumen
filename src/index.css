@@ -16,7 +16,7 @@
         @apply size-[24px] rounded-[24px] bg-black absolute top-0 left-0
     }
     .home{
-        @apply w-full min-h-screen
+        @apply w-full min-h-screen bg-cover bg-center transition-all duration-300 ease-in-out
     }
     .nav{
         @apply flex items-center justify-between w-full py-[40px] px-[50px]
