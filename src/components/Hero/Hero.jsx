@@ -1,22 +1,21 @@
-import React from 'react'
 import { section } from '../../lumenContent';
 
 const words = ["Capture", "Moments", "Light"];
-const Hero = () => {
-  return (
+const Hero = ({ handleMouseEnter, handleMouseLeave }) => (
     <section className='w-full'>
         <div className='p-[15vw] w-full'>
-        <h1 className='heroTitle'>{section.home.title}</h1>
-        <div className="flex gap-x-9 max-sm:flex-col max-sm:gap-y-4 max-sm:mt-10">
-        {words.map((word, index)=>(
-        <h1 className='outLined stroke' key={index}>{word}</h1>
-        ))}
-        </div>
+            <h1 className='heroTitle'>{section.home.title}</h1>
+            <div className="flex gap-x-9 max-sm:flex-col max-sm:gap-y-4 max-sm:mt-10">
+                {words.map((word, i) => (
+                    <h1 className='outLined stroke' key={i} onMouseEnter={() => handleMouseEnter(word)}
+                        onMouseLeave={handleMouseLeave} > {word} </h1>
+                ))}
+            </div>
         </div>
         <div className="px-[15vw] py-[5vw]">
             <p className='sectionDes'>{section.home.description}</p>
         </div>
     </section>
-  )
-}
-export default Hero
+  );
+
+export default Hero;
